@@ -22,3 +22,6 @@ ro.oplus.mtk_gps_L1L5                                           u:object_r:vendo
 
 # PQ
 ro.vendor.mtk_hdr_video_support                                 u:object_r:vendor_mtk_pq_ro_prop:s0
+
+# PowerHAL
+vendor.powerhal.rendering                                       u:object_r:vendor_power_prop:s0
