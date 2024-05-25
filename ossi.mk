@@ -380,9 +380,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/publiclibraries/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Power
-$(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
-
 PRODUCT_PACKAGES += \
+    android.hardware.power-service.lineage-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_PACKAGES += \
@@ -480,7 +479,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     $(COMMON_PATH) \
     hardware/mediatek \
-    hardware/oplus
+    hardware/oplus \
+    hardware/lineage/interfaces/power-libperfmgr
 
 # IMS
 PRODUCT_BOOT_JARS += \
