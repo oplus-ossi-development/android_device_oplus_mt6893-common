@@ -318,7 +318,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/permissions/nfc_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nfc_features.xml
 
 # Overlays
-$(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
 PRODUCT_PACKAGES += \
     FrameworkResOverlayPlatform \
     SystemUIOverlayPlatform \
