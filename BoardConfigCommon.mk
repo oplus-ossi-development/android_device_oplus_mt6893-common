@@ -72,6 +72,7 @@ BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/device_framework_matrix.xml
+    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
 
 # Compatibility matrix
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml
