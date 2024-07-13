@@ -584,5 +584,8 @@ PRODUCT_PACKAGES += \
     libjni_shim \
     libsensors_shim
 
+PRODUCT_PACKAGES += \
+    libshim_ui
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oplus/mt6893-common/mt6893-common-vendor.mk)
