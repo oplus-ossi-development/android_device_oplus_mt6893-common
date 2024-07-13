@@ -77,6 +77,9 @@ function blob_fixup {
 	system_ext/lib64/libsource.so)
             grep -q libshim_ui.so "$2" || "$PATCHELF" --add-needed libshim_ui.so "$2"
             ;;
+	vendor/lib/libcodec2_vndk-mtk.so)
+	    grep -q libshim_ui.so "$2" || "$PATCHELF" --add-needed libshim_ui.so "$2"
+            ;;
     esac
 }
 
