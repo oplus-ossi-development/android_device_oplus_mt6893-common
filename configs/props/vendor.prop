@@ -335,3 +335,9 @@ ro.vendor.wifi.sap.concurrent.iface=ap1
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=512
 debug.media.codec2=2
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
