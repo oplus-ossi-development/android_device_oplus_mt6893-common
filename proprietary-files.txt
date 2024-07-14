@@ -908,7 +908,6 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5e228669d2c575e38fc0
 -framework/mediatek-ims-extension-plugin.jar
 -framework/mediatek-services.jar
 -framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
 -framework/mediatek-telephony-common.jar
 odm/lib/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
