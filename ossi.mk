@@ -122,6 +122,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
     libcamera2ndk_vendor \
+    libexif.vendor \
     libexpat.vendor \
     libpng.vendor
 
@@ -241,25 +242,28 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.mt6893
 
-#OMX
+# OMX
 PRODUCT_PACKAGES += \
-       android.hardware.media.omx@1.0-service \
-       android.hardware.media.c2@1.1.vendor \
-       android.hardware.media.c2@1.2.vendor \
-       libcodec2_vndk.vendor \
-       libcodec2_soft_avcdec \
-       libcodec2_soft_avcenc \
-       libcodec2_soft_h263dec \
-       libcodec2_soft_h263enc \
-       libcodec2_soft_mpeg4dec \
-       libcodec2_soft_mpeg4enc \
-       libcodec2_soft_vp8dec \
-       libcodec2_soft_vp8enc \
-       libcodec2_soft_vp9dec \
-       libcodec2_soft_vp9enc \
-       libcodec2_soft_hevcdec \
-       libcodec2_soft_hevcenc \
-       libstagefright_omx.vendor
+    android.hardware.media.omx@1.0-service \
+    android.hardware.media.c2@1.1.vendor \
+    android.hardware.media.c2@1.2.vendor \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_vndk.vendor \
+    libcodec2_soft_avcdec \
+    libcodec2_soft_avcenc \
+    libcodec2_soft_h263dec \
+    libcodec2_soft_h263enc \
+    libcodec2_soft_mpeg4dec \
+    libcodec2_soft_mpeg4enc \
+    libcodec2_soft_vp8dec \
+    libcodec2_soft_vp8enc \
+    libcodec2_soft_vp9dec \
+    libcodec2_soft_vp9enc \
+    libcodec2_soft_hevcdec \
+    libcodec2_soft_hevcenc \
+    libstagefright_omx.vendor
 
 # Media
 PRODUCT_PACKAGES += \
@@ -267,6 +271,7 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.1.vendor \
     android.hardware.media.c2@1.2.vendor \
     libavservices_minijail.vendor \
+    libavservices_minijail_vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
     libstagefright_bufferpool@2.0.1.vendor
@@ -578,7 +583,8 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
     hostapd_cli \
-    libwifi-hal-mt66xx
+    libwifi-hal-mt66xx \
+    libwifi-system-iface.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hidl/vendor_hals.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/vendor_hals.xml

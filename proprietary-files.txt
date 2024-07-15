@@ -1237,6 +1237,16 @@ vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
+# OLC
+odm/etc/vintf/manifest/vendor.oplus.hardware.olc@2.0-service.xml
+odm/etc/permissions/vendor-oplus-hardware-olc-2.xml
+odm/etc/init/vendor.oplus.hardware.olc@2.0-service.rc
+odm/bin/hw/vendor.oplus.hardware.olc@2.0-service
+odm/lib/vendor.oplus.hardware.olc@2.0.so
+odm/lib/libolc_vnd.so
+odm/lib64/vendor.oplus.hardware.olc@2.0.so
+odm/lib64/libolc_vnd.so
+
 # ORMS
 odm/lib/vendor.oplus.hardware.orms@1.0.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
