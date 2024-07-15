@@ -869,6 +869,10 @@ vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so
 # Pin patched activity exported engineer mode
 -priv-app/EngineerMode/EngineerMode.apk|9c90462d8caf098ce923bb947a58e49ca13be579
 
+# Hotstar - from denniz DN2101_11_F.50
+odm/lib/libwvhdcpext.so|362e59249d2c71f18a9638220a99c23ede2ad0d1
+odm/lib64/libwvhdcpext.so|96858d43c8a786b25b9da193602edfa99bda15f6
+
 # Hotword Enrollment - from mt6893
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar|5ea17315d96f9320e487450ff5812ea7641df2dc
 -product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk|29f366971d42b0793e8b62d20f259fe6afda0c2e
