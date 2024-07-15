@@ -121,7 +121,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
-    libcamera2ndk_vendor
+    libcamera2ndk_vendor \
+    libexpat.vendor \
+    libpng.vendor
 
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
@@ -149,7 +151,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V2-ndk_platform.vendor \
     android.hardware.graphics.common-V2-ndk.vendor \
     disable_configstore \
-    vndservicemanager
+    vndservicemanager \
+    libion.vendor \
+    libui.vendor
 
 # Display saturation adjust
 PRODUCT_VENDOR_PROPERTIES += \
@@ -182,7 +186,8 @@ PRODUCT_COPY_FILES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
-    android.hardware.gatekeeper@1.0-impl
+    android.hardware.gatekeeper@1.0-impl \
+    libgatekeeper.vendor
 
 # GNSS
 PRODUCT_PACKAGES += \
@@ -192,7 +197,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0.vendor \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.0.vendor \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss@2.1.vendor \
+    libcurl.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.gnss-service.mediatek
@@ -205,7 +211,8 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhidltransport.vendor \
     libhardware.vendor \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libhidlmemory.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -227,7 +234,8 @@ PRODUCT_PACKAGES += \
    libpuresoftkeymasterdevice.vendor:64 \
    libsoft_attestation_cert.vendor:64 \
    libkeystore-wifi-hidl \
-   libkeystore-engine-wifi-hidl
+   libkeystore-engine-wifi-hidl \
+   libnetutils.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -318,7 +326,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/permissions/nfc_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nfc_features.xml
 
 # Overlays
-$(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
 PRODUCT_PACKAGES += \
     FrameworkResOverlayPlatform \
     SystemUIOverlayPlatform \
@@ -492,7 +499,8 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1.vendor \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
     android.frameworks.sensorservice@1.0.vendor \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libpower.vendor
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -580,10 +588,18 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
+PRODUCT_PACKAGES += \
+    libunwindstack.vendor \
+    libutilscallstack.vendor \
+    libdumpstateutil.vendor
+
 # libshims
 PRODUCT_PACKAGES += \
     libjni_shim \
     libsensors_shim
+
+PRODUCT_PACKAGES += \
+    libshim_ui
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oplus/mt6893-common/mt6893-common-vendor.mk)
