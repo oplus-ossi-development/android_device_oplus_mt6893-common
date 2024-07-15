@@ -1,4 +1,4 @@
-# Unpinned common blobs from DN2103_11_F.45 (sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1684289553451 release-keys)
+# Unpinned common blobs from RMX3031_11.F.12 (sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1677828988354 release-keys)
 
 # Extra
 odm/lib/libosensehalclient.so
@@ -886,7 +886,7 @@ system_ext/lib64/libmtk_vt_service.so|302d3ab3c5b3fa0107520fe36098b32cd0a8dd96
 system_ext/lib64/libmtk_vt_wrapper.so|af4d486c516c920ea99c362aebbf04180e96035c
 system_ext/lib64/libsignal.so|0f55bb64c660fe4cda2b695121580b054f026e73
 system_ext/lib64/libsink.so|6bd8c55847116a9a37e223ea2a6e5ce1379e53f7
-system_ext/lib64/libsource.so|66a481fd2e260a820899d60cf9190fb986d36768
+system_ext/lib64/libsource.so|e216e5dedb880f8e3b54cbefaf50277dd6d92c39
 system_ext/lib64/libvcodec_cap.so|6973253cb2e4ddf365451ed2ac8db9d04085bc4a
 system_ext/lib64/libvcodec_capenc.so|5527525dfcd25169bc380ac53d8181ffa1429c6f
 system_ext/lib64/libvt_avsync.so|632cb05532ef2e022072d91bff3c1ae47c888b7e
@@ -1583,7 +1583,7 @@ vendor/lib64/imx709_mipi_raw_21127_IdxMgr.so
 vendor/lib64/imx709_mipi_raw_21305_IdxMgr.so
 vendor/lib64/imx766_mipi_raw_21305_IdxMgr.so
 vendor/lib64/libAVCSecureVencCA.so
-vendor/lib64/libPolarrRender.so
+odm/lib64/libPolarrRender.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
 vendor/lib64/libcustomer_testvision.so
 vendor/lib64/ov50a_mipi_raw_21127_IdxMgr.so
