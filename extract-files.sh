@@ -39,12 +39,8 @@ function blob_fixup {
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
             ;;
-	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
-            ;;
-        vendor/lib/libcodec2_mtk_c2store.so|\
-        vendor/lib64/libcodec2_mtk_c2store.so)
-            "${PATCHELF}" --replace-needed "libcodec2_soft_common.so" "libcodec2_soft_common-mtk.so" "${2}"
             ;;
         vendor/bin/mtk_agpsd)
            "$PATCHELF" --replace-needed libcrypto.so libcrypto-v32.so "$2"
@@ -53,7 +49,7 @@ function blob_fixup {
         vendor/lib*/libkeystore-engine-wifi-hidl.so)
             "$PATCHELF" --replace-needed android.system.keystore2-V1-ndk_platform.so android.system.keystore2-V1-ndk.so "$2"
             ;;
-	vendor/lib64/libmtkcam_featurepolicy.so)
+        vendor/lib64/libmtkcam_featurepolicy.so)
             # evaluateCaptureConfiguration()
             sed -i "s/\x34\xE8\x87\x40\xB9/\x34\x28\x02\x80\x52/" "$2"
             ;;
@@ -74,16 +70,16 @@ function blob_fixup {
         vendor/lib64/libaalservice.so)
             "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-v30.so" "${2}"
             ;;
-	vendor/lib64/libsource.so)
+        vendor/lib64/libsource.so)
             grep -q libshim_ui.so "$2" || "$PATCHELF" --add-needed libshim_ui.so "$2"
             ;;
-	system/lib64/libsource.so)
+        system/lib64/libsource.so)
             grep -q libshim_ui.so "$2" || "$PATCHELF" --add-needed libshim_ui.so "$2"
             ;;
-	system_ext/lib64/libsource.so)
+        system_ext/lib64/libsource.so)
             grep -q libshim_ui.so "$2" || "$PATCHELF" --add-needed libshim_ui.so "$2"
             ;;
-	vendor/lib/libcodec2_vndk-mtk.so)
+        vendor/lib/libcodec2_vndk-mtk.so)
             grep -q libshim_ui.so "$2" || "$PATCHELF" --add-needed libshim_ui.so "$2"
             ;;
     esac

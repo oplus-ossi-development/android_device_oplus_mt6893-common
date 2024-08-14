@@ -636,9 +636,6 @@ odm/init.oplus.fingerprints.rc
 vendor/lib/vendor.oplus.hardware.commondcs@1.0.so
 vendor/lib64/vendor.oplus.hardware.commondcs@1.0.so
 
-# Firmware (Connectivity) - from A145PXXU1AWA3
-vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin:vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin|9cd0d79cde76a59ddd8545b1621af1176c5f9605
-
 # GPS
 vendor/bin/mtk_agpsd
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
@@ -958,10 +955,6 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 # Listen
 vendor/lib/hw/sound_trigger.primary.default.so
 
-# MTK VDEC blobs kanged From xiaomi ares
-vendor/lib/libcodec2_mtk_vdec.so|da3fdc3d63b9717f02a4297100df37003e54d7dc
-vendor/lib64/libcodec2_mtk_vdec.so|7174aa7bba4a31194f8a141276f7d1188970dd79
-
 # Media
 odm/lib/libavcodec.so
 odm/lib/libavformat.so
@@ -1008,7 +1001,14 @@ vendor/lib/HEVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libJpgEncPipe.so
+vendor/lib/libMtkOmxAdpcmDec.so
+vendor/lib/libMtkOmxAlacDec.so
+vendor/lib/libMtkOmxApeDec.so
+vendor/lib/libMtkOmxCore.so
+vendor/lib/libMtkOmxGsmDec.so
+vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libcodec2_mtk_c2store.so
+vendor/lib/libcodec2_mtk_vdec.so
 vendor/lib/libcodec2_mtk_venc.so
 vendor/lib/libcodec2_soft_mtk_alacdec.so
 vendor/lib/libcodec2_soft_mtk_apedec.so
@@ -1018,11 +1018,14 @@ vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
 vendor/lib/libcodec2_soft_mtk_wmadec.so
 vendor/lib/libcodec2_vpp_qt_plugin.so
 vendor/lib/libcodec2_vpp_rs_plugin.so
+vendor/lib/libformatter.so
 vendor/lib/libh264dec_customize.so
 vendor/lib/libh264dec_sa.ca7.so
 vendor/lib/libh264dec_sd.ca7.so
 vendor/lib/libh264dec_se.ca7.so
 vendor/lib/libh264enc_sa.ca7.so
+vendor/lib/libhdrvideo.so
+vendor/lib/libheichal.so
 vendor/lib/libhevce_sb.ca7.android.so
 vendor/lib/libhfmanager.so
 vendor/lib/libhfmanagerwrapper.so
@@ -1037,6 +1040,11 @@ vendor/lib/libjpeg-alpha-oal_vendor.so
 vendor/lib/libjpeg-alpha_vendor.so
 vendor/lib/libmfllcore.so
 vendor/lib/libthha.so
+vendor/lib/libmmprofile.so
+vendor/lib/libmp3dec_mtk.so
+vendor/lib/libmp4enc_sa.ca7.so
+vendor/lib/libmp4enc_xa.ca7.so
+vendor/lib/libstagefrighthw.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv.so
@@ -1047,14 +1055,17 @@ vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvpu.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
+vendor/lib/libstagefright_bufferpool@2.0.1.so
 vendor/lib64/AV1SecureVdecCA.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/HEVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libJpgEncPipe.so
+vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libacdk.so
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libcodec2_mtk_c2store.so
+vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
 vendor/lib64/libcodec2_soft_mtk_alacdec.so
 vendor/lib64/libcodec2_soft_mtk_apedec.so
@@ -1082,6 +1093,8 @@ vendor/lib64/libjpeg-alpha_vendor.so
 vendor/lib64/libmfllcore.so
 vendor/lib64/libmmprofile.so
 vendor/lib64/libthha.so
+vendor/lib64/libmp3dec_mtk.so
+vendor/lib64/libstagefrighthw.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodecdrv_header_stub.so
 vendor/lib64/libvia-ril.so
@@ -1090,14 +1103,8 @@ vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
 vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
--vendor/lib/libcodec2_hidl@1.1.so:vendor/lib/libcodec2_hidl-mtk@1.1.so
--vendor/lib/libcodec2_hidl@1.2.so:vendor/lib/libcodec2_hidl-mtk@1.2.so
 vendor/lib/libcodec2_hidl_plugin.so
--vendor/lib/libcodec2_soft_common.so:vendor/lib/libcodec2_soft_common-mtk.so
--vendor/lib64/libcodec2_hidl@1.1.so:vendor/lib64/libcodec2_hidl-mtk@1.1.so
--vendor/lib64/libcodec2_hidl@1.2.so:vendor/lib64/libcodec2_hidl-mtk@1.2.so
 vendor/lib64/libcodec2_hidl_plugin.so
--vendor/lib64/libcodec2_soft_common.so:vendor/lib64/libcodec2_soft_common-mtk.so
 
 # Media-Hardware
 vendor/lib/libstagefrighthw.so
