@@ -1,0 +1,28 @@
+From a43eb0a4440a3d9de862d8ef5dfeeaf7b868390a Mon Sep 17 00:00:00 2001
+From: ShevT <evgeny.shishkov@gmail.com>
+Date: Fri, 30 Aug 2024 23:14:06 +0900
+Subject: [PATCH] check_boot_jars: Add more extra oplus packages to whitelist
+
+---
+ scripts/check_boot_jars/package_allowed_list.txt | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/scripts/check_boot_jars/package_allowed_list.txt b/scripts/check_boot_jars/package_allowed_list.txt
+index 063e9f035..61e36d678 100644
+--- a/scripts/check_boot_jars/package_allowed_list.txt
++++ b/scripts/check_boot_jars/package_allowed_list.txt
+@@ -269,6 +269,11 @@ com\.nvidia\..*
+ 
+ # OPLUS adds
+ com\.oplus\..*
++net.oneplus.*
++oplus.*
++vendor.oplus.*
++com.oneplus.*
++vendor.oneplus.*
+ 
+ # QC adds
+ com.qualcomm.qti
+-- 
+2.34.1
+
