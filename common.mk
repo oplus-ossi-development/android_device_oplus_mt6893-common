@@ -454,6 +454,10 @@ PRODUCT_PACKAGES += \
     RcsService \
     PresencePolling
 
+# ImsInit hack
+PRODUCT_PACKAGES += \
+    ImsInit
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.connectivity.common.rc \
