@@ -898,18 +898,19 @@ vendor/etc/init/init.vtservice_hidl.rc|f2e992214ed5bb99c2c2a135cf1f0996dba8a8a0
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|bb9ff554802e7bffb72cf24604109dafcf0019fc
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5e228669d2c575e38fc02a13404f31bc22494b87
 
+# IMS (framework) - from OP5339L1 CPH2359_14.0.0.600(EX01)
+-system_ext/framework/mediatek-common.jar:framework/mediatek-common.jar|266b647f1c7a093fcc5fdbefec408e73f267770c
+-system_ext/framework/mediatek-framework.jar:framework/mediatek-framework.jar|6ece547498a5fe6d80e6b0fd0905350364633334
+-system_ext/framework/mediatek-ims-base.jar:framework/mediatek-ims-base.jar|d0126720040245e1cf376b9e5728f2f7ebc08650
+-system_ext/framework/mediatek-ims-common.jar:framework/mediatek-ims-common.jar|e95b05c4d1c86f24d989e06a8e309c89f6f628f5
+-system_ext/framework/mediatek-ims-extension-plugin.jar:framework/mediatek-ims-extension-plugin.jar|4dc046fd958bdd3e69991bf6ae5687a387a30f1d
+-system_ext/framework/mediatek-services.jar:framework/mediatek-services.jar|72da01c733f56b3a3e07901219668993fee1781d
+
+# IMS - from RMX2156_11_F.15
+-framework/mediatek-telephony-base.jar|168892505929d06405018e1dd007e523d90e94d0
+-priv-app/ImsService/ImsService.apk|755cbe94aab80d1c5b98b13a047487d382bfa449
+
 # IMS
--framework/mediatek-carrier-config-manager.jar
--framework/mediatek-common.jar
--framework/mediatek-framework.jar
--framework/mediatek-gwsd.jar
--framework/mediatek-gwsdv2.jar
--framework/mediatek-ims-base.jar
--framework/mediatek-ims-common.jar
--framework/mediatek-ims-extension-plugin.jar
--framework/mediatek-services.jar
--framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-common.jar
 odm/lib/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
@@ -930,10 +931,6 @@ vendor/lib64/libmmagent.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
-
-# IMS - from RMX2156_11_F.15
--framework/mediatek-telephony-base.jar|168892505929d06405018e1dd007e523d90e94d0
--priv-app/ImsService/ImsService.apk|755cbe94aab80d1c5b98b13a047487d382bfa449
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic
