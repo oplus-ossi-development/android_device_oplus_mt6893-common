@@ -1,25 +1,29 @@
-From 042e8c1e6ec8b7fd9edc92b4cb6d7979fcf78f5b Mon Sep 17 00:00:00 2001
+From c29fee9146cb8ad227961982ba2dfbdf0089050f Mon Sep 17 00:00:00 2001
 From: lahaina <nattolecats@gmail.com>
-Date: Thu, 4 Apr 2024 18:05:03 +0900
-Subject: [PATCH] libwifi-hal: Disable libwifi-hal-mediatek
+Date: Sun, 20 Oct 2024 23:21:47 +0900
+Subject: [PATCH] libwifi-hal: Disable libwifi-hal-mediatek * Update for A15
 
+Change-Id: I0c08ca9309fe1abdc2554377dc32e58847f2b48c
 ---
- libwifi_hal/Android.bp | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ libwifi_hal/Android.bp | 2 ++
+ 1 file changed, 2 insertions(+)
 
 diff --git a/libwifi_hal/Android.bp b/libwifi_hal/Android.bp
-index 9e75776..0426c00 100644
+index 1af3df008..958f8ad70 100644
 --- a/libwifi_hal/Android.bp
 +++ b/libwifi_hal/Android.bp
-@@ -168,7 +168,7 @@ wifi_cc_defaults {
+@@ -169,9 +169,11 @@ wifi_cc_defaults {
+                 // that sport Marvell's wifi have support for HAL
                  // whole_static_libs: ["libwifi-hal-mrvl"],
              },
++            /*
              mediaTek: {
--                defaults: ["libwifi-hal-mediatek"],
-+                //defaults: ["libwifi-hal-mediatek"],
+                 defaults: ["libwifi-hal-mediatek"],
              },
++            */
              nxp: {
-                 whole_static_libs: ["//vendor/nxp/boreal/wifi:libwifi-hal-nxp"],
+                 whole_static_libs: ["libwifi-hal-nxp"],
+             },
 -- 
-2.25.1
+2.34.1
 
