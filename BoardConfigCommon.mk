@@ -80,7 +80,7 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
 
 # LOS FCM
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/halcyon/config/device_framework_matrix.xml
 
 # Display
 TARGET_SCREEN_DENSITY := 480
