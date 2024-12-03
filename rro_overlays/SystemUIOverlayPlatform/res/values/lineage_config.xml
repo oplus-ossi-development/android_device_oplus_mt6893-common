@@ -23,7 +23,6 @@
 
     <!-- Array of brightness-alpha lut for framework dimming -->
     <string-array name="config_udfpsDimmingBrightnessAlphaArray" translatable="false">
-        <item>0,255</item>
         <item>190,238</item>
         <item>260,229</item>
         <item>320,228</item>
@@ -54,14 +53,4 @@
         <item>2047,69</item>
     </string-array>
 
-    <!-- Brightness range min for UDFPS dimming -->
-    <integer name="config_udfpsDimmingBrightnessMin">300</integer>
-
-    <!-- Brightness range max for UDFPS dimming -->
-    <integer name="config_udfpsDimmingBrightnessMax">2047</integer>
-
-    <!-- The amount of delay to add when disabling the dimming.
-         This is used to prevent flickers due to the dimming being disabled
-         before the screen has had chance to switch out of HBM mode -->
-    <integer name="config_udfpsDimmingDisableDelay">45</integer>
 </resources>
