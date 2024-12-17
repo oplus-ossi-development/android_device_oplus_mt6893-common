@@ -93,7 +93,7 @@ void PowerSessionManager::updateHintMode(const std::string &mode, bool enabled) 
         }
     }
     if (HintManager::GetInstance()->GetAdpfProfile()) {
-        HintManager::GetInstance()->SetAdpfProfile(mode);
+        HintManager::GetInstance()->SetAdpfProfile(mode, 0);
     }
 }
 
