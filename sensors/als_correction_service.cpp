@@ -42,9 +42,9 @@ constexpr int ALS_POS_X = 610;
 constexpr int ALS_POS_Y = 40;
 constexpr int ALS_RADIUS = 64;
 
-static sp<IBinder> getInternalDisplayToken() { 
-	const auto displayIds = SurfaceComposerClient::getPhysicalDisplayIds(); 
-	sp<IBinder> token = SurfaceComposerClient::getPhysicalDisplayToken(displayIds[0]); 
+static sp<IBinder> getInternalDisplayToken() {
+	const auto displayIds = SurfaceComposerClient::getPhysicalDisplayIds();
+	sp<IBinder> token = SurfaceComposerClient::getPhysicalDisplayToken(displayIds[0]);
 	return token;
 }
 
@@ -96,9 +96,10 @@ class TakeScreenshotCommand : public FrameworkCommand {
 
         DisplayCaptureArgs captureArgs;
         captureArgs.displayToken = display;
-        captureArgs.pixelFormat = android::ui::PixelFormat::RGBA_8888;
+        captureArgs.captureArgs.pixelFormat = static_cast<int>(android::PIXEL_FORMAT_RGBA_8888);
 
-        captureArgs.sourceCrop = screenshot_rect;
+        android::gui::ARect rect;
+        captureArgs.captureArgs.sourceCrop = rect;
         captureArgs.width = screenshot_rect.getWidth();
         captureArgs.height = screenshot_rect.getHeight();
         //captureArgs.useIdentityTransform = false;
