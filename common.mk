@@ -116,6 +116,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
 
+$(call inherit-product-if-exists, device/oplus/camera/camera.mk)
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0.vendor:64 \
