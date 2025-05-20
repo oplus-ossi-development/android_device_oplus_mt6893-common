@@ -96,7 +96,7 @@ SECTION=
 KANG=
 
 while [ "${#}" -gt 0 ]; do
-sed -i -E '/^[^#[:space:]]/ s|;?DISABLE_DEPS||g; /^[^#[:space:]].*/ s|([^;|[:space:]]+)(\|.*)?|\1;DISABLE_DEPS\2|' "${MY_DIR}/proprietary-files.txt"
+sed -i -E '/^[^#[:space:]]/ s|;?DISABLE_DEPS||g; /^[^#[:space:]]/ { /[.]apk/! s|([^;|[:space:]]+)(\|.*)?|\1;DISABLE_DEPS\2| }' "${MY_DIR}/proprietary-files.txt"
     case "${1}" in
         -n | --no-cleanup )
                 CLEAN_VENDOR=false
