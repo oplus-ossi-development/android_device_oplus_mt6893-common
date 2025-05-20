@@ -129,6 +129,8 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+sed -i -E 's|;?DISABLE_DEPS||g' "${MY_DIR}/proprietary-files.txt"
+
 # Initialize the helper for device
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
 
@@ -136,5 +138,3 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
 bash "${MY_DIR}/setup-makefiles.sh"
-
-sed -i -E 's|;?DISABLE_DEPS||g' "${MY_DIR}/proprietary-files.txt"
