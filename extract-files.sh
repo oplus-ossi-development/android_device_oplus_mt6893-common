@@ -126,3 +126,5 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
 bash "${MY_DIR}/setup-makefiles.sh"
+
+sed -i -E 's|;?DISABLE_DEPS||g' "${MY_DIR}/proprietary-files.txt"
