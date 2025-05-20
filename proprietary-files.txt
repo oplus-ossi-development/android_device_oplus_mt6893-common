@@ -11,7 +11,7 @@ vendor/lib64/libaal_mtk.so
 vendor/lib64/libaalservice.so
 
 # ADSP
-odm/lib64/libadsprpc.so
+odm/lib64/libadsprpc.so;MODULE_SUFFIX=_odm
 vendor/lib64/libadsprpc.so
 
 # AEE
@@ -47,12 +47,12 @@ odm/lib/lib_aurisys_lvimfs.so
 odm/lib/libnxprecord.so
 odm/lib/libnxpsmartpaparser.so
 odm/lib/libnxpspeech.so
-odm/lib/vendor.oplus.hardware.performance@1.0.so
+odm/lib/vendor.oplus.hardware.performance@1.0.so;MODULE_SUFFIX=_odm
 odm/lib64/lib_aurisys_lvimfs.so
 odm/lib64/libnxprecord.so
 odm/lib64/libnxpsmartpaparser.so
 odm/lib64/libnxpspeech.so
-odm/lib64/vendor.oplus.hardware.performance@1.0.so
+odm/lib64/vendor.oplus.hardware.performance@1.0.so;MODULE_SUFFIX=_odm
 vendor/bin/mt6660_calibration
 vendor/bin/rt5512_calibration
 vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
@@ -529,7 +529,7 @@ odm/lib64/libgf_hal_G5.so
 odm/lib64/libgf_hal_G6.so
 odm/lib64/libgf_hal_G7.so
 odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so;MODULE_SUFFIX=_odm
-odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
+odm/lib64/vendor.oplus.hardware.commondcs@1.0.so;MODULE_SUFFIX=_odm
 odm/init.oplus.fingerprints.rc
 vendor/lib/vendor.oplus.hardware.commondcs@1.0.so
 vendor/lib64/vendor.oplus.hardware.commondcs@1.0.so
@@ -657,7 +657,7 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 odm/lib/android.hardware.keymaster-V3-ndk_platform.so
 odm/lib/libtrustonic_keybox_ca.so
 odm/lib64/android.hardware.keymaster-V3-ndk_platform.so
-odm/lib64/libneuron_runtime.so
+odm/lib64/libneuron_runtime.so;MODULE_SUFFIX=_odm
 odm/lib64/libtrustonic_keybox_ca.so
 vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
@@ -1116,7 +1116,7 @@ vendor/lib64/libtranslator_mdmi_v2.8.2.so
 vendor/lib64/libtranslator_utils.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
-vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so
+vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so;MODULE_SUFFIX=_vendor
 
 # Secure Element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
