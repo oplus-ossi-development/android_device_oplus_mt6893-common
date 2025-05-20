@@ -143,7 +143,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_RELEASETOOLS_EXTENSIONS ?= $(COMMON_PATH)/releasetools
 
 # Reserve space for gapps install
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/2by2/config/BoardConfigReservedSize.mk
 
 # SPL
 VENDOR_SECURITY_PATCH := 2023-03-05
