@@ -528,7 +528,7 @@ odm/lib64/libgf_hal_G3.so
 odm/lib64/libgf_hal_G5.so
 odm/lib64/libgf_hal_G6.so
 odm/lib64/libgf_hal_G7.so
-odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
+odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so;MODULE_SUFFIX=_odm
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
 odm/init.oplus.fingerprints.rc
 vendor/lib/vendor.oplus.hardware.commondcs@1.0.so
