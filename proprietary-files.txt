@@ -654,9 +654,9 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 
 # Keymaster
-odm/lib/android.hardware.keymaster-V3-ndk_platform.so
+odm/lib/android.hardware.keymaster-V3-ndk_platform.so;MODULE_SUFFIX=_odm
 odm/lib/libtrustonic_keybox_ca.so
-odm/lib64/android.hardware.keymaster-V3-ndk_platform.so
+odm/lib64/android.hardware.keymaster-V3-ndk_platform.so;MODULE_SUFFIX=_odm
 odm/lib64/libneuron_runtime.so;MODULE_SUFFIX=_odm
 odm/lib64/libtrustonic_keybox_ca.so
 vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic
