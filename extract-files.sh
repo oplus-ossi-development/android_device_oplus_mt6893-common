@@ -92,7 +92,7 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron|vendor/lib*/libnvram.so|odm/bin/hw/vendor.oplus.hardware.charger@1.0-service|vendor/lib64/libsysenv.so)
              grep -q "libbase_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
              ;;
-        vendor/lib64/hw/hwcomposer.mt6893.so)
+        vendor/lib64/hw/hwcomposer.mt6893.so|vendor/lib64/libutils_v32.so)
              grep -q "libprocessgroup_shim.so" "${2}" || "${PATCHELF}" --add-needed "libprocessgroup_shim.so" "${2}"
             ;;
     esac

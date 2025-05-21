@@ -1172,6 +1172,9 @@ vendor/lib/libthermalalgo.so
 vendor/lib/hw/thermal_hal.so
 vendor/lib64/hw/thermal_hal.so
 
+# Vndk
+vendor/lib64/libutils.so:vendor/lib64/libutils_v32.so
+
 # WiFi
 odm/etc/wifi/txpowerctrl.cfg
 odm/etc/wifi/wifi.cfg

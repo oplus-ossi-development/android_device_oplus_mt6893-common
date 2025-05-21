@@ -486,7 +486,6 @@ PRODUCT_PACKAGES += \
     libssl-v32 \
     libbinder_v32 \
     libhidlbase_v32 \
-    libutils_v32 \
     libstagefright_foundation_v33
 
 # WiFi
