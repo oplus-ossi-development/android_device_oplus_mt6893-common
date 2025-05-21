@@ -98,6 +98,7 @@ vendor/lib/libvow_ap_test_nn.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib/vendor.oplus.hardware.performance@1.0.so
+vendor/lib/libalsautils.so:vendor/lib/libalsautils-v31.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6893.so
@@ -138,6 +139,7 @@ vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib64/vendor.oplus.hardware.performance@1.0.so
+vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v31.so
 
 # Audio-configs
 odm/etc/audio/audio_device/common/audio_device.xml

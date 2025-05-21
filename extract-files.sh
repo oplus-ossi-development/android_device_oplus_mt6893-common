@@ -40,6 +40,9 @@ function blob_fixup {
             "$PATCHELF" --replace-needed libutils.so libutils-v31.so "$2"
             "$PATCHELF" --replace-needed libhidlbase.so libhidlbase_v32.so "$2"
             ;;
+        vendor/lib*/hw/audio.primary.mt6893.so)
+             "${PATCHELF}" --replace-needed "libalsautils.so" "libalsautils-v31.so" "${2}"
+             ;;
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
 	    [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libcodec2_hidl@1.0.so" "${2}"
