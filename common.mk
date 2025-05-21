@@ -483,7 +483,6 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_PACKAGES += \
     libcrypto-v32 \
-    libutils-v31 \
     libssl-v32 \
     libbinder_v32 \
     libhidlbase_v32 \
