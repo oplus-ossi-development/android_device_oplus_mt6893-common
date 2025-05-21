@@ -436,6 +436,7 @@ vendor/lib/libappgamepq.so
 vendor/lib/libdre.so
 vendor/lib/libformatter.so
 vendor/lib/libgamehdr.so
+vendor/lib/libged.so
 vendor/lib/libgpu_aux.so
 vendor/lib/libgpud.so
 vendor/lib/libgralloc_extra.so
