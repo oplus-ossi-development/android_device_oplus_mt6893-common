@@ -527,6 +527,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libshim_ui \
+    libbase_shim \
     libshim
 
 # Inherit from vendor blobs

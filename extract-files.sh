@@ -86,6 +86,9 @@ function blob_fixup {
         vendor/lib/libcodec2_vndk-mtk.so)
             grep -q libshim_ui.so "$2" || "$PATCHELF" --add-needed libshim_ui.so "$2"
             ;;
+        vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron)
+             grep -q "libbase_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+             ;;
     esac
 }
 
