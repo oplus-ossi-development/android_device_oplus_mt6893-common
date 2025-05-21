@@ -761,6 +761,7 @@ vendor/lib64/libformatter.so
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libheichal.so
 vendor/lib64/libhevce_sb.ca7.android.so
+vendor/lib64/libhfmanager.so
 vendor/lib64/libhwconfigurationutil.so
 vendor/lib64/libicd_decoder.so
 vendor/lib64/libifcutils_mtk.so
