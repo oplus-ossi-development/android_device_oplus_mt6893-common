@@ -37,7 +37,7 @@ source "${HELPER}"
 function blob_fixup {
     case "$1" in
         vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
-            "$PATCHELF" --replace-needed libutils.so libutils-v31.so "$2"
+            "$PATCHELF" --replace-needed libutils.so libutils_v32.so "$2"
             "$PATCHELF" --replace-needed libhidlbase.so libhidlbase_v32.so "$2"
             ;;
         vendor/lib*/hw/audio.primary.mt6893.so)
