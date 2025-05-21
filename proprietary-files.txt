@@ -945,10 +945,7 @@ odm/etc/nfc/nfc_conf_ref
 odm/etc/nfc/nfc_fw_ref
 odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57
 odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_68
-odm/lib/libpn553_fw.so
-odm/lib/libpn557_fw.so
 odm/lib/libpnscr2.so
-odm/lib/libsn100u_fw.so
 odm/lib64/libpnscr2.so
 
 # Nvram
