@@ -763,6 +763,7 @@ vendor/lib64/libheichal.so
 vendor/lib64/libhevce_sb.ca7.android.so
 vendor/lib64/libhfmanager.so
 vendor/lib64/libhfmanagerwrapper.so
+vendor/lib64/libimagebuffer_wrapper.so
 vendor/lib64/libhwconfigurationutil.so
 vendor/lib64/libicd_decoder.so
 vendor/lib64/libifcutils_mtk.so
@@ -843,6 +844,7 @@ vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
 vendor/lib64/libcustomer_testvision.so
+vendor/lib64/libmidasserviceintf.so
 
 # Modules ( configs )
 vendor/etc/init/hw/factory_init.connectivity.common.rc
@@ -932,6 +934,7 @@ vendor/lib64/libarmnn.so
 vendor/lib64/libarmnn_ndk.mtk.vndk.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
+vendor/lib64/libconnfem.so
 vendor/lib64/libneuroeara.so
 vendor/lib64/libneuron_adapter.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
