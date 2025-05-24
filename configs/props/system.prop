@@ -49,6 +49,7 @@ pm.dexopt.shared=speed
 
 # Display
 ro.opengles.version=196610 
+sys.brightness.disable_gamma_conversion=true
 
 # IMS
 persist.dbg.volte_avail_ovr=1 
