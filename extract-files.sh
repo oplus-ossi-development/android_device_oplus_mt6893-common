@@ -42,6 +42,7 @@ function blob_fixup {
             ;;
         vendor/lib*/hw/audio.primary.mt6893.so)
              "${PATCHELF}" --replace-needed "libalsautils.so" "libalsautils-v31.so" "${2}"
+             "${PATCHELF}" --replace-needed "libtinyalsa.so" "libtinyalsa-v32.so" "${2}"
              ;;
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
 	    [ "$2" = "" ] && return 0

@@ -81,3 +81,21 @@ cc_prebuilt_library_shared {
         check_elf_files: false,
         vendor: true,
 }
+
+cc_prebuilt_library_shared {
+        name: "libtinyalsa-v32",
+        strip: {
+                none: true,
+        },
+        target: {
+                android_arm: {
+                        srcs: ["arm/libtinyalsa-v32.so"],
+                },
+                android_arm64: {
+                        srcs: ["arm64/libtinyalsa-v32.so"],
+                },
+        },
+        compile_multilib: "both",
+        check_elf_files: false,
+        vendor: true,
+}
