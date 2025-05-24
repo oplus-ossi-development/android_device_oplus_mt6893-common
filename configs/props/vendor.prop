@@ -41,9 +41,6 @@ bluetooth.profile.pbap.server.enabled=true
 vendor.bluetooth.ldac.abr=true
 ro.vendor.bt.platform=6893
 
-# Brightness
-persist.sys.brightness.low.gamma=true
-
 # Camera
 camera.disable_zsl_mode=1
 vendor.camera.mdp.dre.enable=1
