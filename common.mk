@@ -478,6 +478,9 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor \
     android.hardware.thermal@1.0-impl
 
+# UDFPS
+$(call soong_config_set,surfaceflinger,udfps_lib,//$(COMMON_PATH):libudfps_extension.mt6893)
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-mediatekv2
