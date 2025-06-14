@@ -53,7 +53,6 @@ type persist_engineer_file, file_type;
 type vendor_proc_oplus_version, fs_type, proc_type;
 
 # Performance
-type proc_vm_dirty, fs_type, proc_type;
 type proc_sched_stune, fs_type, proc_type;
 type proc_sched_assist, fs_type, proc_type;
 
