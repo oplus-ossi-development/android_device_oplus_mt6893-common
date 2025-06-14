@@ -274,8 +274,8 @@
 /dev/nq-nci                                                                                             u:object_r:nfc_device:s0
 
 # Sensors
-/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-multihal\.mt6893                 u:object_r:mtk_hal_sensors_exec:s0
-/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service                              u:object_r:mtk_hal_sensors_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-multihal\.mt6893                 u:object_r:hal_sensors_default_exec:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service                              u:object_r:hal_sensors_default_exec:s0
 /dev/m_virtual_sensor_misc                                                                              u:object_r:virtual_sensor_device:s0
 /dev/block/sdc4                                                                                         u:object_r:oplus_block_device:s0
 /dev/block/11270000.ufshci/by-name/oplusreserve*                                                        u:object_r:oplus_block_device:s0
