@@ -591,8 +591,8 @@ odm/lib64/libwvhdcpext.so|96858d43c8a786b25b9da193602edfa99bda15f6
 
 # Hotword Enrollment - from mt6893
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar|5ea17315d96f9320e487450ff5812ea7641df2dc
--product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk|29f366971d42b0793e8b62d20f259fe6afda0c2e
--product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk|951d6f43b5965d6d52609dc60c0cb811d5beb93f
+-product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk;NODEXPO|29f366971d42b0793e8b62d20f259fe6afda0c2e
+-product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk;NODEXPO|951d6f43b5965d6d52609dc60c0cb811d5beb93f
 
 # IMS - from TECNO-CK9n UP1A.230519.001
 system_ext/bin/vtservice|59adc81ee1ad1f3fb4942cd6e8e7100325002eb2
@@ -632,7 +632,7 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendo
 -framework/mediatek-telephony-base.jar|9803c5df30b21000f5f473e9395f0fd9c555f0cd
 
 # IMs (Patched Apk) from c.12 RMX3031-user 12 SP1A.210812.016 1663769087038 release-keys 
--priv-app/ImsService/ImsService.apk|d9d6e5540b769edcc19157099b834b69e345e5f9
+-priv-app/ImsService/ImsService.apk;NODEXPO|d9d6e5540b769edcc19157099b834b69e345e5f9
 
 # IMS
 odm/lib/vendor.oplus.hardware.ims@1.0.so
