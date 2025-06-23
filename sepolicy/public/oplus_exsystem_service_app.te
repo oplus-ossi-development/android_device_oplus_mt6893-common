@@ -1,2 +1,0 @@
-type oplus_exsystem_service_app, domain, coredomain;
-typeattribute oplus_exsystem_service_app mlstrustedsubject;

@@ -1,4 +1,0 @@
-binder_call(mtk_hal_neuralnetworks, opluscamera_app)
-allow mtk_hal_neuralnetworks opluscamera_app:fd use;
-allow mtk_hal_neuralnetworks opluscamera_app:dir search;
-allow mtk_hal_neuralnetworks opluscamera_app_data_file:file { read write };

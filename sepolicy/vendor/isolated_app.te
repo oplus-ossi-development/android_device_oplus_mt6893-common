@@ -1,2 +1,0 @@
-allow isolated_app opluscamera_app_data_file:file { read write };
-

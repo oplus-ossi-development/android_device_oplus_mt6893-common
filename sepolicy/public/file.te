@@ -1,3 +1,2 @@
 # System Suspend
 type vendor_sysfs_usb_supply, fs_type, sysfs_type;
-type opluscamera_app_data_file, file_type, data_file_type, core_data_file_type, app_data_file_type;

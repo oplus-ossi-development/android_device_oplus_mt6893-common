@@ -10,7 +10,6 @@ r_dir_file(mtk_hal_camera, proc_version)
 r_dir_file(mtk_hal_camera, vendor_proc_oplus_version)
 
 set_prop(mtk_hal_camera, vendor_oplus_prop)
-get_prop(mtk_hal_camera, system_oplus_camera_prop)
 
 allow mtk_hal_camera persist_camera_file:dir rw_dir_perms;
 allow mtk_hal_camera persist_camera_file:file create_file_perms;
@@ -20,6 +19,4 @@ allow mtk_hal_camera persist_data_file:dir r_dir_perms;
 allow mtk_hal_camera proc_sched_assist:file rw_file_perms;
 allow mtk_hal_camera proc_boost_pool:file rw_file_perms;
 binder_call(mtk_hal_camera, mtk_hal_mmagent)
-binder_call(mtk_hal_camera, opluscamera_app)
-allow mtk_hal_camera opluscamera_app:fd use;
 hal_client_domain(mtk_hal_camera, hal_mtk_mmagent)

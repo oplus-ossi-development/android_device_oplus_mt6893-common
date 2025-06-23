@@ -12,8 +12,6 @@ vendor.flash.locked                                             u:object_r:vendo
 vendor.fingerprint.                                             u:object_r:vendor_fingerprint_prop:s0
 
 # Camera
-vendor.oplus.camera.                                            u:object_r:vendor_oplus_prop:s0
-persist.vendor.camera.privapp.list                              u:object_r:vendor_oplus_prop:s0
 vendor.debug.cameralog.enable                                   u:object_r:vendor_oplus_prop:s0
 vendor.debug.tpi.                                               u:object_r:vendor_oplus_prop:s0
 

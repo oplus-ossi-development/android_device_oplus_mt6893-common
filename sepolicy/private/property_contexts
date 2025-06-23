@@ -4,7 +4,6 @@ demo.hole                                        u:object_r:exported_system_prop
 demo.near                                        u:object_r:exported_system_prop:s0
 demo.far                                         u:object_r:exported_system_prop:s0
 demo.fb                                          u:object_r:exported_system_prop:s0
-oplus.camera.                                    u:object_r:exported_system_prop:s0
 oplus.CTP.Tunningmode                            u:object_r:exported_system_prop:s0
 oplus.debug.nvram.enable                         u:object_r:exported_system_prop:s0
 persist.bps.debug                                u:object_r:exported_system_prop:s0
