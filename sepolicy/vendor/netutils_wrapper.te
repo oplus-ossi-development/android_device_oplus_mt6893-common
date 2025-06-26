@@ -1,4 +1,0 @@
-allow netutils_wrapper ccci_vts_device:chr_file rw_file_perms;
-allow netutils_wrapper ccci_device:chr_file rw_file_perms;
-allow netutils_wrapper ccci_wifi_proxy_device:chr_file rw_file_perms;
-allow netutils_wrapper rild:file rw_file_perms;

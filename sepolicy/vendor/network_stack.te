@@ -1,1 +1,0 @@
-allow network_stack proc_net:file r_file_perms;
