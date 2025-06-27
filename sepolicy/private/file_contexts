@@ -1,6 +1,3 @@
 # Alert slider
 /(system_ext|system/system_ext)/bin/alert-slider_daemon                         u:object_r:alert-slider_daemon_exec:s0
 /system/bin/service                                                             u:object_r:service_call_exec:s0
-
-# vtservice
-/system_ext/bin/vtservice                                                       u:object_r:vtservice_exec:s0
