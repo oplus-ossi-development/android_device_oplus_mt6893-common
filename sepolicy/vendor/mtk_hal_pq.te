@@ -1,4 +1,0 @@
-r_dir_file(mtk_hal_pq, vendor_proc_oplus_version)
-set_prop(mtk_hal_pq, vendor_mtk_default_prop)
-allow mtk_hal_pq vendor_proc_display:file rw_file_perms;
-allow mtk_hal_pq ion_device:chr_file rw_file_perms;

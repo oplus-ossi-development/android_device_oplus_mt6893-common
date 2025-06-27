@@ -11,7 +11,6 @@
 
 # Charging
 /dev/oplus_chg                                                                                          u:object_r:oplus_charger_device:s0
-/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.charger@1\.0-service                                  u:object_r:hal_charger_oplus_exec:s0
 
 # Display
 /dev/oplus_display                                                                                      u:object_r:oplus_display_device:s0
@@ -25,29 +24,6 @@
 
 # Sensors
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-multihal\.mt6893                 u:object_r:hal_sensors_default_exec:s0
-/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service                              u:object_r:mtk_hal_sensors_exec:s0
-/dev/m_virtual_sensor_misc                                                                              u:object_r:virtual_sensor_device:s0
-/dev/block/sdc4                                                                                         u:object_r:oplus_block_device:s0
-/dev/block/11270000.ufshci/by-name/oplusreserve*                                                        u:object_r:oplus_block_device:s0
-/dev/block/soc/11270000.ufshci/by-name/oplusreserve*                                                    u:object_r:oplus_block_device:s0
-/dev/block/platform/11270000.ufshci/by-name/reserve.*                                                   u:object_r:oplus_block_device:s0
-/dev/block/platform/11270000.ufshci/by-name/oplusreserve.*                                              u:object_r:oplus_block_device:s0
-/dev/block/platform/11270000.ufshci/by-name/oplus_custom                                                u:object_r:oplus_block_device:s0
-/dev/block/by-name/oplusreserve.*                                                                       u:object_r:oplus_block_device:s0
-/dev/block/platform/soc/11270000.ufshci/by-name/reserve.*                                               u:object_r:oplus_block_device:s0
-/dev/block/platform/soc/11270000.ufshci/by-name/oplusreserve.*                                          u:object_r:oplus_block_device:s0
-/dev/block/platform/soc/11270000.ufshci/by-name/oplus_custom                                            u:object_r:oplus_block_device:s0
-/dev/block/by-name/cdt_engineering(_[ab])?                                                              u:object_r:oplus_block_device:s0
-/dev/block/bootdevice/by-name/oplusreserve*                                                             u:object_r:oplus_block_device:s0
-/dev/block/platform/bootdevice/by-name/reserve.*                                                        u:object_r:oplus_block_device:s0
-/dev/block/platform/bootdevice/by-name/oplusreserve.*                                                   u:object_r:oplus_block_device:s0
-/dev/block/sdc3                                                                                         u:object_r:oplus_block_device:s0
-/dev/block/sdb3                                                                                         u:object_r:oplus_block_device:s0
-/dev/block/platform/bootdevice/by-name/oplus_custom                                                     u:object_r:oplus_block_device:s0
-/dev/block/sdc7                                                                                         u:object_r:oplus_block_device:s0
-/dev/block/sdc16                                                                                        u:object_r:oplus_block_device:s0
-/mnt/vendor/persist/engineermode(/.*)?                                                                  u:object_r:persist_engineer_file:s0
-/storage/persist/engineermode(/.*)?                                                                     u:object_r:persist_engineer_file:s0
 
 # Fingerprint
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@2\.1-service                  u:object_r:hal_fingerprint_default_exec:s0
@@ -69,8 +45,6 @@
 
 # ORMS Hal
 /(vendor|odm)/bin/hw/vendor\.oplus\.hardware\.orms\.ormsHalService@1\.0-service                         u:object_r:oplus_hal_ormsHal_exec:s0
-/(vendor|odm|vendor/odm)/bin/hw/vendor.oplus.hardware.ormsHalService-aidl-service                       u:object_r:oplus_orms_aidl_service_exec:s0
-/(vendor|odm)/lib(64)?/vendor\.oplus\.hardware\.ormsHalService-V1-ndk_platform\.so                      u:object_r:same_process_hal_file:s0
 
 # Performance
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.performance@1\.0-service                              u:object_r:hal_performance_oplus_exec:s0

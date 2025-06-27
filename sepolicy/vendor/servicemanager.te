@@ -1,2 +1,0 @@
-binder_call(servicemanager, oplus_orms_aidl_service)
-r_dir_file(servicemanager, oplus_orms_aidl_service)

@@ -22,7 +22,6 @@ allow init hal_performance_oplus_exec:file {r_file_perms execute};
 allow init hal_performance_oplus_hwservice:hwservice_manager find;
 allow init mtk_hal_videotelephony_hwservice:hwservice_manager find;
 allow init oplus_block_device:lnk_file relabelto;
-allow init oplus_orms_aidl_service_exec:file {r_file_perms execute};
 allow init sysfs_vibrator:file rw_file_perms;
 
 get_prop(init, exported_system_prop)

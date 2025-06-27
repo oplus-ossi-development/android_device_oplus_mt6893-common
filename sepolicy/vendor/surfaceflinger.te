@@ -1,2 +1,0 @@
-binder_call(surfaceflinger, mtk_hal_mmagent)
-hal_client_domain(surfaceflinger, hal_mtk_mmagent)

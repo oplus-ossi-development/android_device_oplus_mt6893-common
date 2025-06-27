@@ -1,3 +1,0 @@
-allow mtk_hal_power vendor_proc_display:dir search;
-allow mtk_hal_power vendor_proc_display:file rw_file_perms;
-binder_call(mtk_hal_power, hal_power_default)
